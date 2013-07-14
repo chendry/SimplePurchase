@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
         + (void)addObserverForProduct:(NSString *)productId block:(void(^)(SKPaymentTransaction *transaction))block
         + (void)buyProduct:(NSString *)productId block:(void(^)(NSError *error))block;
     DESC
-  s.homepage = "http://github.com/chendry/SimplePurchase.git"
+  s.homepage = "http://github.com/chendry/SimplePurchase"
   s.author = { "Chad Hendry" => "chendry@chendry.org" }
   s.source = { :git => "http://github.com/chendry/SimplePurchase.git", :tag => "0.0.1" }
   s.platform = :ios, '5.0'
