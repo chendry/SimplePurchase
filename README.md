@@ -39,9 +39,9 @@ Second, perform the purchase and notify the user of any error:
         if (error)
         {
             [[[UIAlertView alloc] initWithTitle:@"Purchase Error"
-                                       message:error.localizedDescription
-                                      delegate:nil
-                             cancelButtonTitle:@"OK"
+                                        message:error.localizedDescription
+                                       delegate:nil
+                              cancelButtonTitle:@"OK"
                               otherButtonTitles:nil] show];
         }
      }];
