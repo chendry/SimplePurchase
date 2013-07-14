@@ -5,10 +5,14 @@ SimplePurchase is a lightweight wrapper for in-app purchases on the iOS
 platform.  It is inspired by Parse's in-app purchase API.  However, unlike
 Parse, SimplePurchase:
 
-* Does not do as much.  No verification of receipts, handling of downloadable
-  content, etc.
-* Does not depend on external libraries, e.g., Facebook.
+* Does less.  No verification of receipts, no handling of downloadable content,
+  no UI for a store, etc.
+* Does not depend on the Facebook SDK.
 * Is available as a CocoaPod.
+
+Although Parse felt a little too heavy for the project from which this library
+was extracted, I strongly suggest checking them out.  Here's a link to Parse's
+in-app purchase [documentation](https://www.parse.com/docs/ios_guide#iap/iOS).
 
 Installation
 ============
@@ -23,7 +27,8 @@ subdirectory into your project.
 Example Usage
 =============
 
-First, register an observer for your product:
+First, register an observer for your product.  This should be done right after
+the app has launched:
 
     [SimplePurchase addObserverForProduct:@"com.example.MyApp.pro"
                                     block:^(SKPaymentTransaction *transaction)
@@ -32,7 +37,8 @@ First, register an observer for your product:
         // changes neccessary in the app.
     }];
 
-Second, perform the purchase and notify the user of any error:
+Second, when the user has requested to make the purchase, initiate the purchase
+and notify the user of any error:
 
     [SimplePurchase buyProduct:@"com.example.MyApp.pro" block:^(NSError *error)
      {
