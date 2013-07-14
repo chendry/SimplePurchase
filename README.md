@@ -15,7 +15,7 @@ Installation
 
 Add the following to your Podfile and run the `pod` command to install:
 
-   pod 'SimplePurchase', '~> 0.0.1'
+    pod 'SimplePurchase', '~> 0.0.1'
 
 If you're not using CocoaPods, copy all of the files inside the Classes
 subdirectory into your project.
