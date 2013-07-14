@@ -10,6 +10,13 @@ Parse, SimplePurchase:
 * Does not depend on external libraries, e.g., Facebook.
 * Is available as a CocoaPod.
 
+Installation
+============
+
+Add the following to your Podfile and run the `pod` command to install:
+
+   pod 'SimplePurchase', '~> 0.0.1'
+
 Example Usage
 =============
 
