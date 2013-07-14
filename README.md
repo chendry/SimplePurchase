@@ -34,7 +34,7 @@ First, register an observer for your product:
 
 Second, perform the purchase and notify the user of any error:
 
-    [SimplePurchase buyProduct:@"org.chendry.DizzySquares.pro" block:^(NSError *error)
+    [SimplePurchase buyProduct:@"com.example.MyApp.pro" block:^(NSError *error)
      {
         if (error)
         {
