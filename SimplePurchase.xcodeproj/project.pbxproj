@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6070E91A179C7B6F0000CAEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6070E919179C7B6F0000CAEC /* Foundation.framework */; };
-		6070E91F179C7B6F0000CAEC /* SimplePurchase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6070E91E179C7B6F0000CAEC /* SimplePurchase.h */; };
-		6070E921179C7B6F0000CAEC /* SimplePurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070E920179C7B6F0000CAEC /* SimplePurchase.m */; };
+		6070E92F179C7CD70000CAEC /* ProductCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070E928179C7CD70000CAEC /* ProductCache.m */; };
+		6070E930179C7CD70000CAEC /* ProductLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070E92A179C7CD70000CAEC /* ProductLoader.m */; };
+		6070E931179C7CD70000CAEC /* Purchaser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070E92C179C7CD70000CAEC /* Purchaser.m */; };
+		6070E932179C7CD70000CAEC /* SimplePurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070E92E179C7CD70000CAEC /* SimplePurchase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +21,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				6070E91F179C7B6F0000CAEC /* SimplePurchase.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,8 +30,14 @@
 		6070E916179C7B6F0000CAEC /* libSimplePurchase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSimplePurchase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6070E919179C7B6F0000CAEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6070E91D179C7B6F0000CAEC /* SimplePurchase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimplePurchase-Prefix.pch"; sourceTree = "<group>"; };
-		6070E91E179C7B6F0000CAEC /* SimplePurchase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimplePurchase.h; sourceTree = "<group>"; };
-		6070E920179C7B6F0000CAEC /* SimplePurchase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePurchase.m; sourceTree = "<group>"; };
+		6070E927179C7CD70000CAEC /* ProductCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCache.h; path = ../Classes/ProductCache.h; sourceTree = "<group>"; };
+		6070E928179C7CD70000CAEC /* ProductCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCache.m; path = ../Classes/ProductCache.m; sourceTree = "<group>"; };
+		6070E929179C7CD70000CAEC /* ProductLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductLoader.h; path = ../Classes/ProductLoader.h; sourceTree = "<group>"; };
+		6070E92A179C7CD70000CAEC /* ProductLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductLoader.m; path = ../Classes/ProductLoader.m; sourceTree = "<group>"; };
+		6070E92B179C7CD70000CAEC /* Purchaser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Purchaser.h; path = ../Classes/Purchaser.h; sourceTree = "<group>"; };
+		6070E92C179C7CD70000CAEC /* Purchaser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Purchaser.m; path = ../Classes/Purchaser.m; sourceTree = "<group>"; };
+		6070E92D179C7CD70000CAEC /* SimplePurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimplePurchase.h; path = ../Classes/SimplePurchase.h; sourceTree = "<group>"; };
+		6070E92E179C7CD70000CAEC /* SimplePurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimplePurchase.m; path = ../Classes/SimplePurchase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +80,14 @@
 		6070E91B179C7B6F0000CAEC /* SimplePurchase */ = {
 			isa = PBXGroup;
 			children = (
-				6070E91E179C7B6F0000CAEC /* SimplePurchase.h */,
-				6070E920179C7B6F0000CAEC /* SimplePurchase.m */,
+				6070E927179C7CD70000CAEC /* ProductCache.h */,
+				6070E928179C7CD70000CAEC /* ProductCache.m */,
+				6070E929179C7CD70000CAEC /* ProductLoader.h */,
+				6070E92A179C7CD70000CAEC /* ProductLoader.m */,
+				6070E92B179C7CD70000CAEC /* Purchaser.h */,
+				6070E92C179C7CD70000CAEC /* Purchaser.m */,
+				6070E92D179C7CD70000CAEC /* SimplePurchase.h */,
+				6070E92E179C7CD70000CAEC /* SimplePurchase.m */,
 				6070E91C179C7B6F0000CAEC /* Supporting Files */,
 			);
 			path = SimplePurchase;
@@ -139,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6070E921179C7B6F0000CAEC /* SimplePurchase.m in Sources */,
+				6070E92F179C7CD70000CAEC /* ProductCache.m in Sources */,
+				6070E930179C7CD70000CAEC /* ProductLoader.m in Sources */,
+				6070E931179C7CD70000CAEC /* Purchaser.m in Sources */,
+				6070E932179C7CD70000CAEC /* SimplePurchase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +258,7 @@
 				6070E926179C7B6F0000CAEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
