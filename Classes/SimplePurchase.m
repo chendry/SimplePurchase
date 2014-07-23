@@ -22,4 +22,9 @@ static Purchaser *_purchaser;
     [_purchaser buyProduct:productId block:block];
 }
 
++ (void)finishTransaction:(SKPaymentTransaction*)t
+{
+    [[SKPaymentQueue defaultQueue] finishTransaction:t];
+}
+
 @end

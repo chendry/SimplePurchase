@@ -64,8 +64,6 @@
         
         if ([self transactionIsSuccess:t])
             [self notifyObserversForProduct:t.payment.productIdentifier transaction:t];
-        
-        [[SKPaymentQueue defaultQueue] finishTransaction:t];
     }
 }
 
