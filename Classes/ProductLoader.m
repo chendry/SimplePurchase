@@ -44,7 +44,7 @@
 {
     if (response.products.count == 0)
     {
-        _error = [NSError errorWithDomain:@"SimplePurchaseErrorDomain" code:1 userInfo:@{@"localizedDescription": @"Product id is unknown."}];
+        _error = [NSError errorWithDomain:@"SimplePurchaseErrorDomain" code:1 userInfo:@{NSLocalizedDescriptionKey: @"Product id is unknown."}];
     }
     else
     {
