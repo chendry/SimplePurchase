@@ -42,7 +42,14 @@
 
 - (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response
 {
-    _product = response.products[0];    
+    if (response.products.count == 0)
+    {
+        _error = [NSError errorWithDomain:@"SimplePurchaseErrorDomain" code:1 userInfo:@{NSLocalizedDescriptionKey: @"Product id is unknown."}];
+    }
+    else
+    {
+        _product = response.products[0];
+    }
 }
 
 - (void)requestDidFinish:(SKRequest *)request
